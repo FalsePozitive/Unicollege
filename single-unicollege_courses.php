@@ -368,6 +368,10 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 						if($entrance_requirements)
 						{
 						?>
+                        <div id="contact_links">
+                        <a href="/contact" class="contact_links_button">ENQUIRE</a>
+                        <a href="/registration" class="contact_links_button">REGISTER</a>
+                        </div>  
 							<div class="entry-content faq_custom_class">
 								<div class="col-12">
 									<button class="accordion">Entrance Requirements</button>
@@ -944,11 +948,12 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 								}
 								?>
 							</div>
+                                  
+						</div>
                         <div id="contact_links">
                         <a href="/contact" class="contact_links_button">ENQUIRE</a>
                         <a href="/registration" class="contact_links_button">REGISTER</a>
-                        </div>            
-						</div>
+                        </div>  
 						<?php
 						if($entrance_requirements)
 						{
