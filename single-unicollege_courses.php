@@ -2,15 +2,15 @@
 
 #contact_links{
 	display:block;
-margin:10px auto;
-padding:10px 0px;
+margin-top:10px;
+padding:20px 0px 0px 0px;
 }
 .contact_links_button{
-	background-color:#363636;
-	color:white!important;
-	padding:14px 18px;
-	font-weight:bold;
-	margin-right:20px
+	background-color: #6c757d;
+    color: white!important;
+    padding: 5px 18px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 body
@@ -33,7 +33,7 @@ body
   outline: none;
   font-size: 17px;
   transition: 0.4s;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 .active, .accordion:hover 
@@ -368,10 +368,14 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 						if($entrance_requirements)
 						{
 						?>
+                        <div class="entry-content">
+                        <div class="col-12">
                         <div id="contact_links">
                         <a href="/contact" class="contact_links_button">ENQUIRE</a>
                         <a href="/registration" class="contact_links_button">REGISTER</a>
                         </div>  
+                        </div>
+                        </div>
 							<div class="entry-content faq_custom_class">
 								<div class="col-12">
 									<button class="accordion">Entrance Requirements</button>
@@ -950,10 +954,14 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 							</div>
                                   
 						</div>
+                        <div class="entry-content">
+                        <div class="col-12">
                         <div id="contact_links">
                         <a href="/contact" class="contact_links_button">ENQUIRE</a>
                         <a href="/registration" class="contact_links_button">REGISTER</a>
                         </div>  
+                        </div>
+                        </div>
 						<?php
 						if($entrance_requirements)
 						{
