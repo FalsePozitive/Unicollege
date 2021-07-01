@@ -516,7 +516,7 @@ function hexagon_upcoming_custom_action()
 		'post_type'      => 'unicollege_courses',
 		'publish_status' => 'published',
 		'order'          => 'ASC',
-		'posts_per_page' => 50,
+		'posts_per_page' => 15,
 		"meta_query" => array(
 			$category_data,
 		)
@@ -544,6 +544,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'part_time_course_start_date' => $upcoming_part_time_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[1] == "part_time" && get_post_meta($post_id,'part_time_course_start_date',true) > $current_date )
@@ -552,6 +553,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'part_time_course_start_date' => $upcoming_part_time_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 			}
@@ -564,6 +566,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'full_time_course_start_date' => $upcoming_full_time_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 			}
@@ -576,6 +579,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'online_course_start_date' => $upcoming_online_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[1] == "online" && get_post_meta($post_id,'online_course_start_date',true) > $current_date )
@@ -584,6 +588,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'online_course_start_date' => $upcoming_online_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[2] == "online" && get_post_meta($post_id,'online_course_start_date',true) > $current_date )
@@ -592,6 +597,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'online_course_start_date' => $upcoming_online_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 			}
@@ -604,6 +610,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'workshop_course_start_date' => $upcoming_workshop_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[1] == "workshops" && get_post_meta($post_id,'workshop_course_start_date',true) > $current_date )
@@ -612,6 +619,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'workshop_course_start_date' => $upcoming_workshop_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[2] == "workshops" && get_post_meta($post_id,'workshop_course_start_date',true) > $current_date )
@@ -620,6 +628,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'workshop_course_start_date' => $upcoming_workshop_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 				if($learning_method[3] == "workshops" && get_post_meta($post_id,'workshop_course_start_date',true) > $current_date )
@@ -628,6 +637,7 @@ function hexagon_upcoming_custom_action()
 						'permalink' => $permalink,
 						'post_title' => $post_title,
 						'workshop_course_start_date' => $upcoming_workshop_course_start_date,
+						'posts_per_page' => '15',
 					);
 				}
 			}
