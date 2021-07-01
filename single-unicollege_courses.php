@@ -1,4 +1,18 @@
 <style>
+
+#contact_links{
+	display:block;
+margin:10px auto;
+padding:10px 0px;
+}
+.contact_links_button{
+	background-color:#363636;
+	color:white!important;
+	padding:14px 18px;
+	font-weight:bold;
+	margin-right:20px
+}
+
 body
 {
 	font-size: 13px !important;
@@ -284,7 +298,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 							<div class="col-12 download_custom">
 								<a href="<?php echo $course_fact_sheet_url;?>" target="_blank">
 									<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-										<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Course Fact Sheet</strong>
+										<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Course Factsheet</strong>
 								</a>
 							</div>
 						</div>
@@ -324,7 +338,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 										<div class="col-12 download_custom">
 											<a href="<?php echo $fulltime_factsheet;?>" target="_blank">
 												<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Full-Time Factsheet</strong>
+													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Full-Time Factsheet</strong>
 											</a>
 										</div>
 									</div>
@@ -341,7 +355,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 										<div class="col-12 download_custom">
 											<a href="<?php echo $parttime_factsheet;?>" target="_blank">
 												<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Part-Time Factsheet</strong>
+													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Part-Time Factsheet</strong>
 											</a>
 										</div>
 									</div>
@@ -865,7 +879,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 									<div class="col-12 download_custom" style="margin-left: 0px;">
 										<a href="<?php echo $course_fact_sheet_url;?>" target="_blank">
 											<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-												<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Course Fact Sheet</strong>
+												<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Course Factsheet</strong>
 										</a>
 									</div>
 								</div>
@@ -884,7 +898,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 												<div class="col-12 download_custom"  style="margin-left: 0px;">
 													<a href="<?php echo $second_factsheet;?>" target="_blank">
 														<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-															<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an ONLINE COURSE Factsheet</strong>
+															<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Online Factsheet</strong>
 													</a>
 												</div>
 											</div>
@@ -900,7 +914,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                                                 <div class="col-12 download_custom" style="margin-left: 0px;">
                                                     <a href="<?php echo $fulltime_factsheet;?>" target="_blank">
                                                         <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Full-Time Factsheet</strong>
+                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Full-Time Factsheet</strong>
                                                     </a>
                                                 </div>
                                             </div>
@@ -917,7 +931,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                                                 <div class="col-12 download_custom" style="margin-left: 0px;">
                                                     <a href="<?php echo $parttime_factsheet;?>" target="_blank">
                                                         <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Part-Time Factsheet</strong>
+                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download a Part-Time Factsheet</strong>
                                                     </a>
                                                 </div>
                                             </div>
@@ -930,7 +944,10 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 								}
 								?>
 							</div>
-
+                        <div id="contact_links">
+                        <a href="/contact" class="contact_links_button">ENQUIRE</a>
+                        <a href="/registration" class="contact_links_button">REGISTER</a>
+                        </div>            
 						</div>
 						<?php
 						if($entrance_requirements)
