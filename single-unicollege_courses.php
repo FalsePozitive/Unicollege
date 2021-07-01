@@ -897,7 +897,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                                             {
                                             ?>
                                                 <div class="entry-content">
-                                                <div class="col-12 download_custom">
+                                                <div class="col-12 download_custom" style="margin-left: 0px;">
                                                     <a href="<?php echo $fulltime_factsheet;?>" target="_blank">
                                                         <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
                                                             <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Full-Time Factsheet</strong>
@@ -914,7 +914,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                                             {
                                             ?>
                                                 <div class="entry-content">
-                                                <div class="col-12 download_custom">
+                                                <div class="col-12 download_custom" style="margin-left: 0px;">
                                                     <a href="<?php echo $parttime_factsheet;?>" target="_blank">
                                                         <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
                                                             <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Part-Time Factsheet</strong>
