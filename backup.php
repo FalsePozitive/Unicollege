@@ -307,48 +307,17 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 										<div class="col-12 download_custom">
 											<a href="<?php echo $second_factsheet;?>" target="_blank">
 												<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Online Factsheet</strong>
+													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an ONLINE COURSE Factsheet</strong>
 											</a>
 										</div>
 									</div>
 									<?php
 									}
-									
-								}	//close first if
-                                if($learning_methods['value'] == "full_time")
-								{
-									if($fulltime_factsheet)
+									else
 									{
-									?>
-										<div class="entry-content">
-										<div class="col-12 download_custom">
-											<a href="<?php echo $fulltime_factsheet;?>" target="_blank">
-												<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Full-Time Factsheet</strong>
-											</a>
-										</div>
-									</div>
-									<?php
+										echo "";
 									}
-									
-								}	//close second if
-                                if($learning_methods['value'] == "part_time")
-								{
-									if($parttime_factsheet)
-									{
-									?>
-										<div class="entry-content">
-										<div class="col-12 download_custom">
-											<a href="<?php echo $parttime_factsheet;?>" target="_blank">
-												<img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-													<strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Part-Time Factsheet</strong>
-											</a>
-										</div>
-									</div>
-									<?php
-									}
-									
-								}	//close third if
+								}	
 							}
 						}
 						if($entrance_requirements)
@@ -890,42 +859,11 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
 											</div>
 											<?php
 											}
-                                        }	//close first if
-                                        if($learning_methods['value'] == "full_time")
-                                        {
-                                            if($fulltime_factsheet)
-                                            {
-                                            ?>
-                                                <div class="entry-content">
-                                                <div class="col-12 download_custom">
-                                                    <a href="<?php echo $fulltime_factsheet;?>" target="_blank">
-                                                        <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Full-Time Factsheet</strong>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <?php
-                                            }
-                                            
-                                        }	//close second if
-                                        if($learning_methods['value'] == "part_time")
-                                        {
-                                            if($parttime_factsheet)
-                                            {
-                                            ?>
-                                                <div class="entry-content">
-                                                <div class="col-12 download_custom">
-                                                    <a href="<?php echo $parttime_factsheet;?>" target="_blank">
-                                                        <img src="<?php echo site_url();?>/wp-content/uploads/2021/04/download-e1619420576801.png">
-                                                            <strong style="color: #3b3b3b; font-size: 14px;     margin-left: 10px;">Download an Part-Time Factsheet</strong>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <?php
-                                            }
-                                            
-                                        }	//close third if
-											
+											else
+											{
+												echo "";
+											}
+										}	
 									}
 								}
 								?>
