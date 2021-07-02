@@ -102,6 +102,9 @@ div#myCarousel
 a:focus, a:hover {
     text-decoration: none !important;
 }
+.accreditation{
+	padding-top:20px;
+}
 @media only screen 
     and (min-device-width : 320px) 
     and (max-device-width : 480px) 
@@ -371,7 +374,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                         <div class="entry-content">
                         <div class="col-12">
                         <div id="contact_links">
-                        <a href="/contact" class="contact_links_button">ENQUIRE</a>
+                        <a href="/contact" class="contact_links_button">ENQUIRE NOW</a>
                         <a href="/registration" class="contact_links_button">REGISTER</a>
                         </div>  
                         </div>
@@ -957,7 +960,7 @@ $pricing_indicater = get_field('pricing_indicater',$post_id);
                         <div class="entry-content">
                         <div class="col-12">
                         <div id="contact_links">
-                        <a href="/contact" class="contact_links_button">ENQUIRE</a>
+                        <a href="/contact" class="contact_links_button">ENQUIRE NOW</a>
                         <a href="/registration" class="contact_links_button">REGISTER</a>
                         </div>  
                         </div>
